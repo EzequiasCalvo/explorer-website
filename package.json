@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "engines": {
-    "node": "12.5.0"
+    "node": "16.x"
   },
   "prettier": {
     "semi": false,
