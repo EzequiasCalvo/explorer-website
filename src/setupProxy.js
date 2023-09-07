@@ -7,7 +7,11 @@ const path = require('path')
 module.exports = function (app) {
   createStaticRoutes(app, '/cdn/packages/website/:version/*', `./public`)
   // createStaticRoutes(app, '/cdn/packages/explorer/:version/*', `./node_modules/@dcl/explorer`)
-  createStaticRoutes(app, '/cdn/packages/explorer/:version/*', path.resolve(process.env.EXPLORER_PATH))
+  createStaticRoutes(
+    app,
+    '/cdn/packages/explorer/:version/*',
+    path.resolve('./unity-renderer/browser-interface/static')
+  )
 }
 
 function createStaticRoutes(app, route, localFolder) {
