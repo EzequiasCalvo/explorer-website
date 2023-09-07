@@ -21,7 +21,7 @@ export interface WalletSelectorProps {
 
 export const EthWalletSelector: React.FC<WalletSelectorProps> = React.memo(
   ({ open, loading, canceling, provider, availableProviders, onLogin, onCancelLogin, onClose }) => {
-    console.log('beguiners guide')
+    // console.log('beguiners guide')
     const anchor = useMemo(() => {
       const a = document.createElement('a')
       a.target = '_blank'
